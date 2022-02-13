@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script defer src="./js/index.js"></script>
+  <title>HTML Forms</title>
+</head>
+
+<body>
+  <form action="#">
+
+    <!-- <label for="f-name">Name:</label>
+    <input id="f-name">
+
+    <label>
+      <span>Name:</span>
+      <input>
+    </label> -->
+
+    <fieldset>
+      <legend>Текстовые элементы ввода</legend>
+      <label>
+        <span>Name:</span>
+        <input type="text" name="first-name" placeholder="Your name" minlength="2" maxlength="8" pattern="" autofocus
+          required>
+      </label>
+      <br>
+      <label>
+        <span>Password:</span>
+        <input type="password" name="password" placeholder="Password">
+      </label>
+      <br>
+      <label>
+        <span>Email:</span>
+        <input type="email" name="email" placeholder="email">
+      </label>
+      <br>
+      <label>
+        <span>URL:</span>
+        <input type="url" name="url" placeholder="url">
+      </label>
+      <br>
+      <label>
+        <span>Search:</span>
+        <input type="search" name="search-string">
+      </label>
+      <br>
+      <label>
+        <span>Tel:</span>
+        <input type="tel" name="tel-number" placeholder="+380991234567">
+      </label>
+    </fieldset>
+
+    <fieldset>
+      <legend>Числовые элементы ввода</legend>
+      <label>
+        <span>Number:</span>
+        <input type="number" name="number" min="0" max="100" step="2">
+      </label>
+      <br>
+      <label>
+        <span>Number2:</span>
+        <input type="range" name="number2" min="0" max="100">
+      </label>
+    </fieldset>
+
+    <fieldset>
+      <legend>Элементы ввода даты/времени</legend>
+      <label>
+        <span>Date:</span>
+        <input type="date" name="date">
+      </label>
+      <br>
+      <label>
+        <span>Datetime:</span>
+        <input type="datetime-local" name="datetime">
+      </label>
+      <br>
+      <label>
+        <span>Time:</span>
+        <input type="time" name="time">
+      </label>
+      <br>
+      <label>
+        <span>Month:</span>
+        <input type="month" name="month">
+      </label>
+      <br>
+      <label>
+        <span>Week:</span>
+        <input type="week" name="week">
+      </label>
+    </fieldset>
+
+    <label>
+      <span>Color:</span>
+      <input type="color" name="color">
+    </label>
+
+    <br>
+
+    <label>
+      <span>File:</span>
+      <input type="file" name="file" multiple>
+    </label>
+
+    <br>
+
+    <label>
+      <input type="hidden" name="country" value="Ukraine">
+    </label>
+
+    <fieldset>
+      <legend>Gender:</legend>
+      <label><input type="radio" name="gender" value="male"><span>Male</span></label>
+      <label><input type="radio" name="gender" value="female"><span>Female</span></label>
+      <label><input type="radio" name="gender" value="other" checked><span>Other</span></label>
+    </fieldset>
+
+
+    <fieldset>
+      <legend>Preferences:</legend>
+      <label><input type="checkbox" name="prefs" value="sport"><span>Sport</span></label>
+      <label><input type="checkbox" name="prefs" value="videogames" checked><span>Video Games</span></label>
+      <label><input type="checkbox" name="prefs" value="news"><span>News</span></label>
+      <label><input type="checkbox" name="prefs" value="shipping" checked><span>Shopping</span></label>
+    </fieldset>
+
+
+    <!-- buttons -->
+    <!-- <input type="submit" value="Send"> -->
+    <!-- <input type="reset" value="Сбросить"> -->
+    <!-- <input type="button" value="Удалить"> -->
+    <!-- <input type="image" src="https://www.pngfind.com/pngs/m/120-1201355_png-file-svg-transparent-png.png" width="50px"> -->
+    <br>
+    <button type="submit" class="submit-btn">Submit</button>
+    <button type="reset">Reset</button>
+  </form>
+</body>
+
+</html>
